@@ -59,9 +59,11 @@ Finally, I observe an anomally in the predictive power of the kNN model. The exp
 </div>
 <br>
 Figure 3 compares the type 1 errors of the 7 models used in this paper to predict bankruptcy of JSE companies one year prior to event during two global crisis periods. The vertical axis reports the false positive rate of the models in percentage, while the horizontal axis reports the type of model used.
-
+<br>
+<br>
 To begin with, type 1 error (false positive rate) measures the proportion of negative cases (bankrupt companies in this occasion) that were wrongly classified as positive (non-bankrupt). We observe that the ensemble models had a superior ability to correctly classify bankrupt companies during Covid-19 pandemic, with a false positive rate of less than 3% on average which was below their non-crisis period. This was also the case for the SVM and Logit classifiers. Meanwhile, the kNN and ANN models experienced difficulty in classifying bankrupt companies during the same period. However, except for the SVM model, the rest of the models experienced type 1 errors that were above their non-crisis periods. On the average, the misclassification rate of the bankruptcy companies rose by 9% from non-crisis period during Covid-19.
-
+<br>
+<br>
 Finally, it is interesting to notice that the SVM and the Bagging model did show a somewhat overt propensity to predict companies as bankrupt especially in the credit crisis period. This can be seen by observing the type II errors of the models given in the table below. By simply looking that panel B type 2 errors, we can quickly observe that the two models respectively predicted 19% and 25% of the non-bankrupt companies 
 as bankrupt, which could as explain the higher true negative rate.
 
