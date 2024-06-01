@@ -23,7 +23,7 @@ This project endeavours to compare how the 8 models covered in the [previous pro
 </div>
 <br>
  Fig 1a. 2008 Global financial crisis data balance
-
+<br>
 <br clear="both">
 
 <div align="Left">
