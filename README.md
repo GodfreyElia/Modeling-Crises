@@ -35,3 +35,14 @@ This project endeavours to compare how the 8 models covered in the [previous pro
 ### 2. Findings and Discussion
 
 #### 2.1. Accuracy
+<br clear="both">
+
+<div align="Left">
+  <img height="60%" width="75%" src="https://github.com/GodfreyElia/Modeling-Crises/blob/main/File/Accuracy.png"  />
+</div>
+<br>
+Figure 2 compares the accuracy of the eight models used in this paper to predict bankruptcy of JSE companies one year prior to failure. The vertical axis reports the accuracy of the models in percentage, while the horizontal axis reports the type of model used.
+
+A quick glance at the accuracies of the models reveals a decrease in the performance of all the models during the Covid-19 pandemic (with the exception of the logit and the SVM classifiers) relative to their performance during non-crisis periods. On the other hand, with exception of Random Forest, Boosting, and Logistic Regression, the rest of the models underperformed their non-crisis period thresholds. On average, the accuracy of the models have decreased by over 3% during the COVID-19 pandemic and only 1% during the credit crises. This finding agrees with scholars who assert that crisis periods weaken the predictive strengths of classifiers by introducing sudden bankruptcies into the dataset.
+
+Other key observations include that the Random Forest, Boosting, and SVM models are the most consistent classifies, either outperforming or trailing their non-crisis performance.
