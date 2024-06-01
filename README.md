@@ -60,4 +60,49 @@ Finally, I observe an anomally in the predictive power of the kNN model. The exp
 <br>
 Figure 3 compares the type 1 errors of the 7 models used in this paper to predict bankruptcy of JSE companies one year prior to event during two global crisis periods. The vertical axis reports the false positive rate of the models in percentage, while the horizontal axis reports the type of model used.
 
-To begin with, type 1 error (false positive rate) measures the proportion of positive cases (actual nonbankrupt companies in this occasion) that were wrongly classified as negative (bankrupt). We observe that the ensemble models had a superior ability to correctly classify bankrupt companies during Covid-19 pandemic, with a false positive rate of less than 3% on average which was below their non-crisis period. This was also the case for the SVM and Logit classifiers. Meanwhile, for the kNN and ANN models experienced difficulty in classifying bankrupt companies during the same period. However, except for the SVM model, 
+To begin with, type 1 error (false positive rate) measures the proportion of negative cases (bankrupt companies in this occasion) that were wrongly classified as positive (non-bankrupt). We observe that the ensemble models had a superior ability to correctly classify bankrupt companies during Covid-19 pandemic, with a false positive rate of less than 3% on average which was below their non-crisis period. This was also the case for the SVM and Logit classifiers. Meanwhile, the kNN and ANN models experienced difficulty in classifying bankrupt companies during the same period. However, except for the SVM model, the rest of the models experienced type 1 errors that were above their non-crisis periods. On the average, the misclassification rate of the bankruptcy companies rose by 9% from non-crisis period during Covid-19.
+
+Finally, it is interesting to notice that the SVM and the Bagging model did show a somewhat overt propensity to predict companies as bankrupt especially in the credit crisis period. This can be seen by observing the type II errors of the models given in the table below. By simply looking that panel B type 2 errors, we can quickly observe that the two models respectively predicted 19% and 25% of the non-bankrupt companies 
+as bankrupt, which could as explain the higher true negative rate.
+
+<br clear="both">
+
+<div align="Left">
+  <img height="60%" width="75%" src="https://github.com/GodfreyElia/Modeling-Crises/blob/main/File/Overall-metrics.png"  />
+</div>
+<br>
+
+Figure 4 shows a summary for the metrics used to assess the models.
+
+#### 2.3. Receiver Operating Characteristics (ROC)
+
+<br clear="both">
+
+<div align="Left">
+  <img height="60%" width="75%" src="https://github.com/GodfreyElia/Modeling-Crises/blob/main/File/COVID-19.png"  />
+</div>
+<br>
+Fig. 5a: ROC during Covid-19
+
+<br clear="both">
+
+<div align="Left">
+  <img height="60%" width="75%" src="https://github.com/GodfreyElia/Modeling-Crises/blob/main/File/GFC-ROC.png"  />
+</div>
+<br>
+Fig. 5b ROC during GFC-2008
+<br>
+<br>
+By observing the ROCs of the models in the two periods, we observe strong predictive strengths among all ensemble models and base learners with the overall lowest predictive strength coming from the Logistic regression model. This appears counterintuitive as the Logit model indicated superior accuracies in both periods. Thus, judging solely based on the ROC for which model to use during crises may prove to be difficult.
+
+#### 3. Conclusion
+
+Based on the above findings, it is safe to conclude that the Covid-19 pandemic had a slightly larger impact on the predictive models compared to the the credit crises. This can be seen in larger decline in accuracies of the models and the increase in type 1 errors in the models in the Covid-19 period compared to the credit crises.
+
+Furthermore, I believe any choice of these four models (and indeed, the average prediction of these four models) would be ideal to use in times of crises: Random forest, Boosting, SVM, and Logistic regression.
+
+----
+### Thank you tonnes for reading this project!
+
+Visit [here](https://github.com/GodfreyElia) for more projects.
+
