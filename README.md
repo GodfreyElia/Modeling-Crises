@@ -85,7 +85,7 @@ Figure 4 shows a summary for the metrics used to assess the models.
 </div>
 <br>
 Fig. 5a: ROC during Covid-19
-
+<br>
 <br clear="both">
 
 <div align="Left">
