@@ -32,5 +32,6 @@ This project endeavours to compare how the 8 models covered in the [previous pro
 <br>
   Fig 1b. 2008 Global financial crisis data balance
 
+### 2. Findings and Discussion
 
-
+#### 2.1. Accuracy
